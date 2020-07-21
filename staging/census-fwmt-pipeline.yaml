@@ -1,0 +1,2264 @@
+groups:
+- jobs:
+  - build-service-v4
+  - build-outcome
+  - build-service-csv
+  - build-fwmt-common
+  - build-fwmt-events
+  - build-acceptance-tests
+  - build-tm-mock
+  - bump-patch-service-v4-auto
+  - bump-patch-outcome-auto
+  - bump-patch-service-csv-auto
+  - bump-patch-fwmt-common-auto
+  - bump-patch-fwmt-events-auto
+  - bump-patch-acceptance-tests-auto
+  - bump-patch-tm-mock-auto
+  - bump-deployment-patch-auto
+  - promote-m-to-sit
+  - deploy-sit
+  - test-acceptance-tests
+  - release-images
+  - promote-sit-to-wl
+  - deploy-whitelodge
+  name: flow-testing
+- jobs:
+  - dev-image-builder-git-bash
+  - dev-image-builder-curl-bash
+  - build-service-v4
+  - build-outcome
+  - build-service-csv
+  - build-fwmt-common
+  - build-fwmt-events
+  - build-acceptance-tests
+  - build-tm-mock
+  - bump-patch-service-v4-auto
+  - bump-patch-outcome-auto
+  - bump-patch-service-csv-auto
+  - bump-patch-fwmt-common-auto
+  - bump-patch-fwmt-events-auto
+  - bump-patch-acceptance-tests-auto
+  - bump-patch-tm-mock-auto
+  - bump-deployment-patch-auto
+  - promote-m-to-sit
+  - deploy-sit
+  - test-acceptance-tests
+  - release-images
+  - promote-sit-to-wl
+  - deploy-whitelodge
+  - promote-wl-to-bl
+  - deploy-blacklodge
+  - promote-bl-to-prod
+  - deploy-prod
+  - bump-patch-service-v4
+  - bump-patch-outcome
+  - bump-patch-service-csv
+  - bump-patch-fwmt-common
+  - bump-patch-fwmt-events
+  - bump-patch-acceptance-tests
+  - bump-patch-tm-mock
+  - bump-deployment-patch
+  - bump-minor-service-v4
+  - bump-minor-outcome
+  - bump-minor-service-csv
+  - bump-minor-fwmt-common
+  - bump-minor-fwmt-events
+  - bump-minor-acceptance-tests
+  - bump-minor-tm-mock
+  - bump-deployment-minor
+  - bump-major-service-v4
+  - bump-major-outcome
+  - bump-major-service-csv
+  - bump-major-fwmt-common
+  - bump-major-fwmt-events
+  - bump-major-acceptance-tests
+  - bump-major-tm-mock
+  - bump-deployment-major
+  - set-secrets
+  - deploy-dev
+  - deploy-perf
+  name: all
+- jobs:
+  - build-service-v4
+  - build-outcome
+  - build-service-csv
+  - build-fwmt-common
+  - build-fwmt-events
+  - build-acceptance-tests
+  - build-tm-mock
+  - bump-patch-service-v4-auto
+  - bump-patch-outcome-auto
+  - bump-patch-service-csv-auto
+  - bump-patch-fwmt-common-auto
+  - bump-patch-fwmt-events-auto
+  - bump-patch-acceptance-tests-auto
+  - bump-patch-tm-mock-auto
+  - bump-deployment-patch-auto
+  - promote-m-to-sit
+  - deploy-sit
+  - test-acceptance-tests
+  - release-images
+  - promote-sit-to-wl
+  - deploy-whitelodge
+  - deploy-blacklodge
+  - deploy-prod
+  name: all-automated
+- jobs:
+  - dev-image-builder-git-bash
+  - dev-image-builder-curl-bash
+  - promote-wl-to-bl
+  - promote-bl-to-prod
+  - bump-patch-service-v4
+  - bump-patch-outcome
+  - bump-patch-service-csv
+  - bump-patch-fwmt-common
+  - bump-patch-fwmt-events
+  - bump-patch-acceptance-tests
+  - bump-patch-tm-mock
+  - bump-deployment-patch
+  - bump-minor-service-v4
+  - bump-minor-outcome
+  - bump-minor-service-csv
+  - bump-minor-fwmt-common
+  - bump-minor-fwmt-events
+  - bump-minor-acceptance-tests
+  - bump-minor-tm-mock
+  - bump-deployment-minor
+  - bump-major-service-v4
+  - bump-major-outcome
+  - bump-major-service-csv
+  - bump-major-fwmt-common
+  - bump-major-fwmt-events
+  - bump-major-acceptance-tests
+  - bump-major-tm-mock
+  - bump-deployment-major
+  - set-secrets
+  - deploy-dev
+  - deploy-perf
+  name: all-controls
+- jobs:
+  - dev-image-builder-git-bash
+  - dev-image-builder-curl-bash
+  - build-service-v4
+  - build-outcome
+  - build-service-csv
+  - build-fwmt-common
+  - build-fwmt-events
+  - build-acceptance-tests
+  - build-tm-mock
+  name: building
+- jobs:
+  - test-acceptance-tests
+  name: tests
+- jobs:
+  - bump-patch-service-v4-auto
+  - bump-patch-outcome-auto
+  - bump-patch-service-csv-auto
+  - bump-patch-fwmt-common-auto
+  - bump-patch-fwmt-events-auto
+  - bump-patch-acceptance-tests-auto
+  - bump-patch-tm-mock-auto
+  - bump-deployment-patch-auto
+  - release-images
+  - bump-patch-service-v4
+  - bump-patch-outcome
+  - bump-patch-service-csv
+  - bump-patch-fwmt-common
+  - bump-patch-fwmt-events
+  - bump-patch-acceptance-tests
+  - bump-patch-tm-mock
+  - bump-deployment-patch
+  - bump-minor-service-v4
+  - bump-minor-outcome
+  - bump-minor-service-csv
+  - bump-minor-fwmt-common
+  - bump-minor-fwmt-events
+  - bump-minor-acceptance-tests
+  - bump-minor-tm-mock
+  - bump-deployment-minor
+  - bump-major-service-v4
+  - bump-major-outcome
+  - bump-major-service-csv
+  - bump-major-fwmt-common
+  - bump-major-fwmt-events
+  - bump-major-acceptance-tests
+  - bump-major-tm-mock
+  - bump-deployment-major
+  name: versioning
+- jobs:
+  - promote-m-to-sit
+  - promote-sit-to-wl
+  - promote-wl-to-bl
+  - promote-bl-to-prod
+  name: promotion
+- jobs:
+  - deploy-sit
+  - deploy-whitelodge
+  - deploy-blacklodge
+  - deploy-prod
+  - deploy-dev
+  - deploy-perf
+  name: deployment
+- jobs:
+  - build-service-v4
+  - bump-patch-service-v4-auto
+  - bump-patch-service-v4
+  - bump-minor-service-v4
+  - bump-major-service-v4
+  name: component-service-v4
+- jobs:
+  - build-outcome
+  - bump-patch-outcome-auto
+  - bump-patch-outcome
+  - bump-minor-outcome
+  - bump-major-outcome
+  name: component-outcome
+- jobs:
+  - build-service-csv
+  - bump-patch-service-csv-auto
+  - bump-patch-service-csv
+  - bump-minor-service-csv
+  - bump-major-service-csv
+  name: component-service-csv
+- jobs:
+  - build-fwmt-common
+  - bump-patch-fwmt-common-auto
+  - bump-patch-fwmt-common
+  - bump-minor-fwmt-common
+  - bump-major-fwmt-common
+  name: component-fwmt-common
+- jobs:
+  - build-fwmt-events
+  - bump-patch-fwmt-events-auto
+  - bump-patch-fwmt-events
+  - bump-minor-fwmt-events
+  - bump-major-fwmt-events
+  name: component-fwmt-events
+- jobs:
+  - build-acceptance-tests
+  - bump-patch-acceptance-tests-auto
+  - bump-patch-acceptance-tests
+  - bump-minor-acceptance-tests
+  - bump-major-acceptance-tests
+  name: component-acceptance-tests
+- jobs:
+  - build-tm-mock
+  - bump-patch-tm-mock-auto
+  - bump-patch-tm-mock
+  - bump-minor-tm-mock
+  - bump-major-tm-mock
+  name: component-tm-mock
+- jobs:
+  - set-secrets
+  name: secrets
+jobs:
+- name: dev-image-builder-git-bash
+  plan:
+  - get: concourse
+  - params:
+      build: concourse/dockerfiles
+      dockerfile: concourse/dockerfiles/dockerfile-git-bash
+      tag_as_latest: true
+    put: dev-image-git-bash
+- name: dev-image-builder-curl-bash
+  plan:
+  - get: concourse
+  - params:
+      build: concourse/dockerfiles
+      dockerfile: concourse/dockerfiles/dockerfile-curl-bash
+      tag_as_latest: true
+    put: dev-image-curl-bash
+- name: build-service-v4
+  plan:
+  - get: concourse
+  - get: git-service-v4
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-v4
+    output_mapping:
+      versions-bumped: git-service-v4-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - file: concourse/tasks/task-build-gradle.yaml
+    input_mapping:
+      code: git-service-v4-bumped-release
+    output_mapping:
+      artifacts: artifacts
+    params:
+      ARTIFACTORY_PASS: ((artifactory-fwmtg))
+      ARTIFACTORY_USER: ffa-ci
+      JAR_NAME: census-fwmt-job-service-v4
+      TASKS: build
+    task: build
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-service-v4
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-service-v4-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-service-v4
+  - params:
+      additional_tags: tags/tags-suffixed
+      build: artifacts
+      build_args_file: artifacts/build-args.json
+      tag_file: concourse/tags/latest
+    put: image-service-v4
+- name: build-outcome
+  plan:
+  - get: concourse
+  - get: git-outcome
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-outcome
+    output_mapping:
+      versions-bumped: git-outcome-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - file: concourse/tasks/task-build-gradle.yaml
+    input_mapping:
+      code: git-outcome-bumped-release
+    output_mapping:
+      artifacts: artifacts
+    params:
+      ARTIFACTORY_PASS: ((artifactory-fwmtg))
+      ARTIFACTORY_USER: ffa-ci
+      JAR_NAME: census-fwmt-outcome-service
+      TASKS: build
+    task: build
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-outcome
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-outcome-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-outcome
+  - params:
+      additional_tags: tags/tags-suffixed
+      build: artifacts
+      build_args_file: artifacts/build-args.json
+      tag_file: concourse/tags/latest
+    put: image-outcome
+- name: build-service-csv
+  plan:
+  - get: concourse
+  - get: git-service-csv
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-csv
+    output_mapping:
+      versions-bumped: git-service-csv-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - file: concourse/tasks/task-build-gradle.yaml
+    input_mapping:
+      code: git-service-csv-bumped-release
+    output_mapping:
+      artifacts: artifacts
+    params:
+      ARTIFACTORY_PASS: ((artifactory-fwmtg))
+      ARTIFACTORY_USER: ffa-ci
+      JAR_NAME: census-fwmt-csv-service
+      TASKS: build
+    task: build
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-service-csv
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-service-csv-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-service-csv
+  - params:
+      additional_tags: tags/tags-suffixed
+      build: artifacts
+      build_args_file: artifacts/build-args.json
+      tag_file: concourse/tags/latest
+    put: image-service-csv
+- name: build-fwmt-common
+  plan:
+  - get: concourse
+  - get: git-fwmt-common
+    trigger: true
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-common
+    output_mapping:
+      versions-bumped: git-fwmt-common-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - file: concourse/tasks/task-build-gradle.yaml
+    input_mapping:
+      code: git-fwmt-common-bumped-release
+    output_mapping:
+      artifacts: artifacts
+    params:
+      ARTIFACTORY_PASS: ((artifactory-fwmtg))
+      ARTIFACTORY_USER: ffa-ci
+      COPY_DOCKERFILE: "false"
+      JAR_NAME: census-fwmt-common
+      TASKS: build artifactoryPublish
+    task: build
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-fwmt-common
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-fwmt-common-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-fwmt-common
+- name: build-fwmt-events
+  plan:
+  - get: concourse
+  - get: git-fwmt-events
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-events
+    output_mapping:
+      versions-bumped: git-fwmt-events-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - file: concourse/tasks/task-build-gradle.yaml
+    input_mapping:
+      code: git-fwmt-events-bumped-release
+    output_mapping:
+      artifacts: artifacts
+    params:
+      ARTIFACTORY_PASS: ((artifactory-fwmtg))
+      ARTIFACTORY_USER: ffa-ci
+      COPY_DOCKERFILE: "false"
+      JAR_NAME: census-fwmt-events
+      TASKS: build artifactoryPublish
+    task: build
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-fwmt-events
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-fwmt-events-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-fwmt-events
+- name: build-acceptance-tests
+  plan:
+  - get: concourse
+  - get: git-acceptance-tests
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-acceptance-tests
+    output_mapping:
+      versions-bumped: git-acceptance-tests-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - get: dev-image-git-bash
+  - config:
+      container_limits: {}
+      inputs:
+      - name: git-acceptance-tests-bumped-release
+        path: code
+      outputs:
+      - name: artifacts
+      params:
+        ARTIFACTORY_PASS: ((artifactory-fwmtg))
+        ARTIFACTORY_USER: ffa-ci
+      platform: linux
+      run:
+        args:
+        - -exc
+        - "\n        cp -a code/* artifacts\n        echo '{}' > artifacts/build-args.json\n
+          \       mkdir -p ~/.gradle\n        echo 'artifactory_user=${ARTIFACTORY_USER}'
+          >> ~/.gradle/gradle.properties\n        echo 'artifactory_password=${ARTIFACTORY_USER}'
+          >> ~/.gradle/gradle.properties\n        "
+        path: /bin/bash
+    image: dev-image-git-bash
+    task: copy-code
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-acceptance-tests
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-acceptance-tests-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-acceptance-tests
+  - params:
+      additional_tags: tags/tags-suffixed
+      build: artifacts
+      build_args_file: artifacts/build-args.json
+      tag_file: concourse/tags/latest
+    put: image-acceptance-tests
+- name: build-tm-mock
+  plan:
+  - get: concourse
+  - get: git-tm-mock
+  - get: git-env-master
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-tm-mock
+    output_mapping:
+      versions-bumped: git-tm-mock-bumped-release
+    params:
+      BUMP_TYPE: none
+      COMMIT_MSG: Bumped version tracker to release
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: release
+    task: bump-code-to-release
+  - file: concourse/tasks/task-build-gradle.yaml
+    input_mapping:
+      code: git-tm-mock-bumped-release
+    output_mapping:
+      artifacts: artifacts
+    params:
+      ARTIFACTORY_PASS: ((artifactory-fwmtg))
+      ARTIFACTORY_USER: ffa-ci
+      JAR_NAME: census-fwmt-tm-mock
+      TASKS: build
+    task: build
+  - file: concourse/tasks/task-extract-tags.yaml
+    input_mapping:
+      source: git-tm-mock
+    output_mapping:
+      tags: tags
+    params:
+      TAG_SUFFIX: snapshot
+      VERSION_FILE: version.txt
+    task: extract-tags
+  - params:
+      repository: git-tm-mock-bumped-release
+      tag: tags/full-version
+      tag_prefix: v
+    put: git-tm-mock
+  - params:
+      additional_tags: tags/tags-suffixed
+      build: artifacts
+      build_args_file: artifacts/build-args.json
+      tag_file: concourse/tags/latest
+    put: image-tm-mock
+- name: bump-patch-service-v4-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+    passed:
+    - build-service-v4
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-v4
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-v4 version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-v4
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-v4
+    output_mapping:
+      versions-bumped: git-service-v4-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-v4-bumped
+    put: git-service-v4
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-outcome-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-outcome
+    passed:
+    - build-outcome
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-outcome
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest outcome version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: outcome
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-outcome
+    output_mapping:
+      versions-bumped: git-outcome-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-outcome-bumped
+    put: git-outcome
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-service-csv-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-csv
+    passed:
+    - build-service-csv
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-csv
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-csv version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-csv
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-csv
+    output_mapping:
+      versions-bumped: git-service-csv-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-csv-bumped
+    put: git-service-csv
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-fwmt-common-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-common
+    passed:
+    - build-fwmt-common
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-common
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-common version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-common
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-common
+    output_mapping:
+      versions-bumped: git-fwmt-common-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-common-bumped
+    put: git-fwmt-common
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-fwmt-events-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-events
+    passed:
+    - build-fwmt-events
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-events
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-events version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-events
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-events
+    output_mapping:
+      versions-bumped: git-fwmt-events-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-events-bumped
+    put: git-fwmt-events
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-acceptance-tests-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-acceptance-tests
+    passed:
+    - build-acceptance-tests
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-acceptance-tests
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest acceptance-tests version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: acceptance-tests
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-acceptance-tests
+    output_mapping:
+      versions-bumped: git-acceptance-tests-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-acceptance-tests-bumped
+    put: git-acceptance-tests
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-tm-mock-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-tm-mock
+    passed:
+    - build-tm-mock
+    trigger: true
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-tm-mock
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest tm-mock version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: tm-mock
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-tm-mock
+    output_mapping:
+      versions-bumped: git-tm-mock-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-tm-mock-bumped
+    put: git-tm-mock
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-deployment-patch-auto
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+    passed:
+    - bump-patch-service-v4-auto
+    trigger: true
+  - get: git-outcome
+    passed:
+    - bump-patch-outcome-auto
+    trigger: true
+  - get: git-service-csv
+    passed:
+    - bump-patch-service-csv-auto
+    trigger: true
+  - get: git-acceptance-tests
+    passed:
+    - bump-patch-acceptance-tests-auto
+    trigger: true
+  - get: git-tm-mock
+    passed:
+    - bump-patch-tm-mock-auto
+    trigger: true
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-env-master
+    output_mapping:
+      versions-bumped: git-env-master-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker deployment at patch
+      FILE_NAME: deployment
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+    task: bump
+  - params:
+      repository: git-env-master-bumped
+      tag: git-env-master-bumped/deployment
+      tag_prefix: v
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: promote-m-to-sit
+  plan:
+  - get: concourse
+  - get: git-env-master
+    passed:
+    - bump-deployment-patch-auto
+    trigger: true
+  - params:
+      force: true
+      repository: git-env-master
+    put: git-env-sit
+  serial_groups:
+  - version-tracker
+- name: deploy-sit
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-sit
+    passed:
+    - promote-m-to-sit
+    trigger: true
+  - file: concourse/tasks/task-deploy-gcp.yaml
+    input_mapping:
+      versions: git-env-sit
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-test
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:census-rm-fwmttmmock
+      IMAGE_SUFFIX: -snapshot
+      TERRAFORM_TEMPLATE_FILES: terraform/kubernetes/fwmt-gateway/fwmtgateway-jobv4-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-outcome-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-csvservice-deployment-template.yml:terraform/kubernetes/optional/fwmtgateway-tmmock-deployment-template.yml
+      VERSION_FILES: versions/service-v4:versions/outcome:versions/service-csv:versions/tm-mock
+    task: gcr-apply
+- name: test-acceptance-tests
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-sit
+    passed:
+    - deploy-sit
+    trigger: true
+  - file: concourse/tasks/task-run-image.yaml
+    input_mapping:
+      versions: git-env-sit
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-test
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAME: acceptance-tests-dev
+      IMAGE_SUFFIX: -snapshot
+      JOB_FILE: k8s/job_fwmt_g_acceptance_tests.yaml
+      JOB_NAME: acceptance-tests
+      VERSION_FILE: acceptance-tests
+    task: run-acceptance-tests
+- name: release-images
+  plan:
+  - get: concourse
+  - get: git-env-sit
+    passed:
+    - test-acceptance-tests
+    trigger: true
+  - file: concourse/tasks/task-retag-images.yaml
+    input_mapping:
+      versions: git-env-sit
+    params:
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:acceptance-tests-dev:census-rm-fwmttmmock
+      NEW_IMAGE_SUFFIX: -release
+      OLD_IMAGE_SUFFIX: -snapshot
+      VERSION_FILES: service-v4:outcome:service-csv:acceptance-tests:tm-mock
+    task: retag
+- name: promote-sit-to-wl
+  plan:
+  - get: concourse
+  - get: git-env-sit
+    passed:
+    - release-images
+    trigger: true
+  - params:
+      force: true
+      repository: git-env-sit
+    put: git-env-whitelodge
+  serial_groups:
+  - version-tracker
+- name: deploy-whitelodge
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-whitelodge
+    passed:
+    - promote-sit-to-wl
+    trigger: true
+  - file: concourse/tasks/task-deploy-gcp.yaml
+    input_mapping:
+      versions: git-env-whitelodge
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-whitelodge
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:census-rm-fwmttmmock
+      IMAGE_SUFFIX: -release
+      TERRAFORM_TEMPLATE_FILES: terraform/kubernetes/fwmt-gateway/fwmtgateway-jobv4-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-outcome-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-csvservice-deployment-template.yml:terraform/kubernetes/optional/fwmtgateway-tmmock-deployment-template.yml
+      VERSION_FILES: versions/service-v4:versions/outcome:versions/service-csv:versions/tm-mock
+    task: gcr-apply
+- name: promote-wl-to-bl
+  plan:
+  - get: concourse
+  - get: git-env-whitelodge
+  - params:
+      force: true
+      repository: git-env-whitelodge
+    put: git-env-blacklodge
+  serial_groups:
+  - version-tracker
+- name: deploy-blacklodge
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-blacklodge
+    passed:
+    - promote-wl-to-bl
+    trigger: true
+  - file: concourse/tasks/task-deploy-gcp.yaml
+    input_mapping:
+      versions: git-env-blacklodge
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-blacklodge
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:census-rm-fwmttmmock
+      IMAGE_SUFFIX: -release
+      TERRAFORM_TEMPLATE_FILES: terraform/kubernetes/fwmt-gateway/fwmtgateway-jobv4-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-outcome-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-csvservice-deployment-template.yml:terraform/kubernetes/optional/fwmtgateway-tmmock-deployment-template.yml
+      VERSION_FILES: versions/service-v4:versions/outcome:versions/service-csv:versions/tm-mock
+    task: gcr-apply
+- name: promote-bl-to-prod
+  plan:
+  - get: concourse
+  - get: git-env-blacklodge
+  - params:
+      force: true
+      repository: git-env-blacklodge
+    put: git-env-prod
+  serial_groups:
+  - version-tracker
+- name: deploy-prod
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-prod
+    passed:
+    - promote-bl-to-prod
+    trigger: true
+  - file: concourse/tasks/task-deploy-gcp.yaml
+    input_mapping:
+      versions: git-env-prod
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-prod
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:census-rm-fwmttmmock
+      IMAGE_SUFFIX: -release
+      TERRAFORM_TEMPLATE_FILES: terraform/kubernetes/fwmt-gateway/fwmtgateway-jobv4-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-outcome-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-csvservice-deployment-template.yml:terraform/kubernetes/optional/fwmtgateway-tmmock-deployment-template.yml
+      VERSION_FILES: versions/service-v4:versions/outcome:versions/service-csv:versions/tm-mock
+    task: gcr-apply
+- name: bump-patch-service-v4
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-v4
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-v4 version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-v4
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-v4
+    output_mapping:
+      versions-bumped: git-service-v4-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-v4-bumped
+    put: git-service-v4
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-outcome
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-outcome
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-outcome
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest outcome version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: outcome
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-outcome
+    output_mapping:
+      versions-bumped: git-outcome-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-outcome-bumped
+    put: git-outcome
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-service-csv
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-csv
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-csv
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-csv version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-csv
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-csv
+    output_mapping:
+      versions-bumped: git-service-csv-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-csv-bumped
+    put: git-service-csv
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-fwmt-common
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-common
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-common
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-common version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-common
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-common
+    output_mapping:
+      versions-bumped: git-fwmt-common-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-common-bumped
+    put: git-fwmt-common
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-fwmt-events
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-events
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-events
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-events version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-events
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-events
+    output_mapping:
+      versions-bumped: git-fwmt-events-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-events-bumped
+    put: git-fwmt-events
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-acceptance-tests
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-acceptance-tests
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-acceptance-tests
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest acceptance-tests version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: acceptance-tests
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-acceptance-tests
+    output_mapping:
+      versions-bumped: git-acceptance-tests-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-acceptance-tests-bumped
+    put: git-acceptance-tests
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-patch-tm-mock
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-tm-mock
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-tm-mock
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest tm-mock version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: tm-mock
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-tm-mock
+    output_mapping:
+      versions-bumped: git-tm-mock-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker at patch
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-tm-mock-bumped
+    put: git-tm-mock
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-deployment-patch
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+  - get: git-outcome
+  - get: git-service-csv
+  - get: git-acceptance-tests
+  - get: git-tm-mock
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-env-master
+    output_mapping:
+      versions-bumped: git-env-master-bumped
+    params:
+      BUMP_TYPE: patch
+      COMMIT_MSG: Bumped version tracker deployment at patch
+      FILE_NAME: deployment
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+    task: bump
+  - params:
+      repository: git-env-master-bumped
+      tag: git-env-master-bumped/deployment
+      tag_prefix: v
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-service-v4
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-v4
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-v4 version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-v4
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-v4
+    output_mapping:
+      versions-bumped: git-service-v4-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-v4-bumped
+    put: git-service-v4
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-outcome
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-outcome
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-outcome
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest outcome version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: outcome
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-outcome
+    output_mapping:
+      versions-bumped: git-outcome-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-outcome-bumped
+    put: git-outcome
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-service-csv
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-csv
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-csv
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-csv version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-csv
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-csv
+    output_mapping:
+      versions-bumped: git-service-csv-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-csv-bumped
+    put: git-service-csv
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-fwmt-common
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-common
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-common
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-common version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-common
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-common
+    output_mapping:
+      versions-bumped: git-fwmt-common-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-common-bumped
+    put: git-fwmt-common
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-fwmt-events
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-events
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-events
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-events version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-events
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-events
+    output_mapping:
+      versions-bumped: git-fwmt-events-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-events-bumped
+    put: git-fwmt-events
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-acceptance-tests
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-acceptance-tests
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-acceptance-tests
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest acceptance-tests version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: acceptance-tests
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-acceptance-tests
+    output_mapping:
+      versions-bumped: git-acceptance-tests-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-acceptance-tests-bumped
+    put: git-acceptance-tests
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-minor-tm-mock
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-tm-mock
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-tm-mock
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest tm-mock version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: tm-mock
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-tm-mock
+    output_mapping:
+      versions-bumped: git-tm-mock-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker at minor
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-tm-mock-bumped
+    put: git-tm-mock
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-deployment-minor
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+  - get: git-outcome
+  - get: git-service-csv
+  - get: git-acceptance-tests
+  - get: git-tm-mock
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-env-master
+    output_mapping:
+      versions-bumped: git-env-master-bumped
+    params:
+      BUMP_TYPE: minor
+      COMMIT_MSG: Bumped version tracker deployment at minor
+      FILE_NAME: deployment
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+    task: bump
+  - params:
+      repository: git-env-master-bumped
+      tag: git-env-master-bumped/deployment
+      tag_prefix: v
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-service-v4
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-v4
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-v4 version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-v4
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-v4
+    output_mapping:
+      versions-bumped: git-service-v4-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-v4-bumped
+    put: git-service-v4
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-outcome
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-outcome
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-outcome
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest outcome version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: outcome
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-outcome
+    output_mapping:
+      versions-bumped: git-outcome-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-outcome-bumped
+    put: git-outcome
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-service-csv
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-csv
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-service-csv
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest service-csv version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: service-csv
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-service-csv
+    output_mapping:
+      versions-bumped: git-service-csv-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-service-csv-bumped
+    put: git-service-csv
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-fwmt-common
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-common
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-common
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-common version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-common
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-common
+    output_mapping:
+      versions-bumped: git-fwmt-common-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-common-bumped
+    put: git-fwmt-common
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-fwmt-events
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-fwmt-events
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-fwmt-events
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest fwmt-events version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: fwmt-events
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-fwmt-events
+    output_mapping:
+      versions-bumped: git-fwmt-events-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-fwmt-events-bumped
+    put: git-fwmt-events
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-acceptance-tests
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-acceptance-tests
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-acceptance-tests
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest acceptance-tests version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: acceptance-tests
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-acceptance-tests
+    output_mapping:
+      versions-bumped: git-acceptance-tests-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-acceptance-tests-bumped
+    put: git-acceptance-tests
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-major-tm-mock
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-tm-mock
+  - file: concourse/tasks/task-copy-version.yaml
+    input_mapping:
+      from: git-tm-mock
+      to: git-env-master
+    output_mapping:
+      to_new: git-env-master-bumped
+    params:
+      COMMIT_MSG: Acquired latest tm-mock version from the repo
+      FROM_FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      OPERATION: drop_suffix
+      TO_FILE_NAME: tm-mock
+    task: bump-tracker
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-tm-mock
+    output_mapping:
+      versions-bumped: git-tm-mock-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker at major
+      FILE_NAME: version.txt
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+      SUFFIX_TYPE: snapshot
+    task: bump-code
+  - params:
+      repository: git-tm-mock-bumped
+    put: git-tm-mock
+  - params:
+      repository: git-env-master-bumped
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: bump-deployment-major
+  plan:
+  - get: concourse
+  - get: git-env-master
+  - get: git-service-v4
+  - get: git-outcome
+  - get: git-service-csv
+  - get: git-acceptance-tests
+  - get: git-tm-mock
+  - file: concourse/tasks/task-bump-tracker.yaml
+    input_mapping:
+      versions: git-env-master
+    output_mapping:
+      versions-bumped: git-env-master-bumped
+    params:
+      BUMP_TYPE: major
+      COMMIT_MSG: Bumped version tracker deployment at major
+      FILE_NAME: deployment
+      GIT_EMAIL: fwmt.ci.onsdigital@gmail.com
+      GIT_NAME: ONS-FWMT-Robot
+    task: bump
+  - params:
+      repository: git-env-master-bumped
+      tag: git-env-master-bumped/deployment
+      tag_prefix: v
+    put: git-env-master
+  serial_groups:
+  - version-tracker
+- name: set-secrets
+  plan:
+  - get: concourse
+  - file: concourse/tasks/task-set-secret.yaml
+    input_mapping:
+      files: concourse
+    params:
+      ENTRY_FILES: secrets/artifactory-fwmtg-password.txt
+      ENTRY_NAMES: value
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      SECRET_NAME: artifactory-fwmtg
+      TEAM: fwmt-gateway
+    task: set-catd-artifactory-password
+- name: deploy-dev
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-sit
+  - file: concourse/tasks/task-deploy-gcp.yaml
+    input_mapping:
+      versions: git-env-sit
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-dev
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:census-rm-fwmttmmock
+      IMAGE_SUFFIX: -snapshot
+      TERRAFORM_TEMPLATE_FILES: terraform/kubernetes/fwmt-gateway/fwmtgateway-jobv4-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-outcome-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-csvservice-deployment-template.yml:terraform/kubernetes/optional/fwmtgateway-tmmock-deployment-template.yml
+      VERSION_FILES: versions/service-v4:versions/outcome:versions/service-csv:versions/tm-mock
+    task: gcr-apply
+- name: deploy-perf
+  plan:
+  - get: concourse
+  - get: terraform
+  - get: git-env-perf
+  - file: concourse/tasks/task-deploy-gcp.yaml
+    input_mapping:
+      versions: git-env-sit
+    params:
+      GCP_CLUSTER_NAME: fwmt-gateway-k8s-cluster
+      GCP_IMAGE_PROJECT: eu.gcr.io/census-gcr-fwmt-gateway
+      GCP_PROJECT: census-fwmt-gateway-perf
+      GCP_REGION: europe-west2
+      GCP_SERVICE_JSON: ((gcp.service_account_json))
+      IMAGE_NAMES: census-rm-fwmtjobsvcv4:census-rm-fwmtoutcomesvc:census-rm-fwmtcsvservice:census-rm-fwmttmmock
+      IMAGE_SUFFIX: -snapshot
+      TERRAFORM_TEMPLATE_FILES: terraform/kubernetes/fwmt-gateway/fwmtgateway-jobv4-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-outcome-deployment-template.yml:terraform/kubernetes/fwmt-gateway/fwmtgateway-csvservice-deployment-template.yml:terraform/kubernetes/optional/fwmtgateway-tmmock-deployment-template.yml
+      VERSION_FILES: versions/service-v4:versions/outcome:versions/service-csv:versions/tm-mock
+    task: gcr-apply
+resources:
+- name: concourse
+  source:
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-ffa-concourse.git
+  type: git
+- name: dev-image-curl-bash
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/curl-bash
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: dev-image-git-bash
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/git-bash
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: git-acceptance-tests
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-acceptance-tests.git
+  type: git
+- name: git-env-blacklodge
+  source:
+    branch: blacklodge
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-version-tracker.git
+  type: git
+- name: git-env-master
+  source:
+    branch: master
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-version-tracker.git
+  type: git
+- name: git-env-perf
+  source:
+    branch: perf
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-version-tracker.git
+  type: git
+- name: git-env-prod
+  source:
+    branch: prod
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-version-tracker.git
+  type: git
+- name: git-env-sit
+  source:
+    branch: sit
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-version-tracker.git
+  type: git
+- name: git-env-whitelodge
+  source:
+    branch: whitelodge
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-version-tracker.git
+  type: git
+- name: git-fwmt-common
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    ignore_paths:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-common.git
+  type: git
+- name: git-fwmt-events
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-events.git
+  type: git
+- name: git-outcome
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-outcome-service.git
+  type: git
+- name: git-service-csv
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-csv-service
+  type: git
+- name: git-service-v4
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-job-service-v4.git
+  type: git
+- name: git-tm-mock
+  source:
+    branch: master
+    exclude:
+    - version.txt
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-tm-mock
+  type: git
+- name: image-acceptance-tests
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/acceptance-tests-dev
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: image-outcome
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/census-rm-fwmtoutcomesvc
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: image-service-csv
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/census-rm-fwmtcsvservice
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: image-service-v4
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/census-rm-fwmtjobsvcv4
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: image-tm-mock
+  source:
+    password: ((gcp.service_account_json))
+    repository: eu.gcr.io/census-gcr-fwmt-gateway/census-rm-fwmttmmock
+    tag: latest
+    username: _json_key
+  type: docker-image
+- name: terraform
+  source:
+    branch: master
+    private_key: ((github.service_account_private_key))
+    uri: git@github.com:ONSdigital/census-fwmt-gateway-terraform.git
+  type: git
